@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= 'Best coffee brands around the world'
+  ul
+    each winner in ranking
+      li= winner.Rank + ': ' + winner.brand + ' (' + winner.origin + ')'
+

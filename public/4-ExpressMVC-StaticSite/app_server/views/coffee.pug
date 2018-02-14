@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= 'Coffee consumption around the world'
+  ul
+    each user in usage
+      li= user.Rank + ': ' + user.country
+
