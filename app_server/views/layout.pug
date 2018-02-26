@@ -1,13 +1,32 @@
 doctype html
-html
+html(lang="en")
   head
     title= 'Coffee statistics'
+    //start blabla
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    a(href='/') Home - coffee statistics
-    br
-    a(href='/coffee') Coffee consumption around the world
-    br
-    a(href='/best') The best coffee brands
-
+    nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
+      .container
+          ul.navbar-nav
+            li.nav-item
+              a(href='/')
+                img(src="https://vignette.wikia.nocookie.net/manly/images/e/e3/Coffee-Cup.jpg/revision/latest?cb=20130429155120", alt="logo", style="width:40px;")
+            li.nav-item
+              a(href='/') Home - coffee statistics
+            li.nav-item
+              a(href='/coffee') Coffee consumption around the world
+            li.nav-item
+              a(href='/best') The best coffee brands
+      .container
     block content
+    footer
+      .row
+        .col-12
+          small &copy; Hynynen 2018
+      //bootstrap
+      script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", crossorigin="anonymous")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
