@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var ctrlBest = require('../controllers/best');
+const ctrlBest = require('../controllers/ctrlBest');
 
 /* GET home page. */
-router.get('/', ctrlBest.winnerlist);
+router.get('/best', ctrlBest.bestList);
 
 module.exports = router;

@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var ctrlCoffee = require('../controllers/coffee');
+const ctrlCoffee = require('../controllers/ctrlCoffee');
 
 /* GET home page. */
-router.get('/', ctrlCoffee.winnerlist);
+router.get('/coffee', ctrlCoffee.usageList);
 
 module.exports = router;
